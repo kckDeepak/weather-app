@@ -58,9 +58,10 @@ export default function Weather() {
 
             {weatherData && (
                 <Box textAlign="center">
-                    <Typography variant='h6'>Weather in {weatherData.city}</Typography>
+                    <Typography variant='h6'>Weather in {weatherData.city}, {weatherData.country}</Typography>
                     <Typography variant='body1'>Temperature: {weatherData.temperature}</Typography>
                     <Typography variant='body1'>Description: {weatherData.description}</Typography>
+                    <Typography variant='body1'>Local Time: {weatherData.localtime}</Typography>
                 </Box>
             )}
         </Box>
