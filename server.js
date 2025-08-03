@@ -38,7 +38,7 @@ app.get('/weather/:city', logRequest,validateCity, async (req, res) => {
     const data = response.data;
     res.json({
       city: data.location.name,
-      temperature: data.current.temp,
+      temperature: data.current.temperature,
       description: data.current.weather_descriptions[0],
     });
   } catch (error) {
